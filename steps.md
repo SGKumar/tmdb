@@ -22,8 +22,14 @@
 1. GET /api/actors
 1. GET /api/actors/$actorId/movies
 
+## Defensive 
+1. Request params validation
+1. Standardized errors
+1. Pagination
+1. Deep fetch
+
 ## Hygiene-factors
-1. Demonstrate different configs for different {dev, integ, prod} environments
+1. Different configs for different {dev, integ, prod} environments
 1. Unit tests (mock ?)
 1. 
 1. Contract testing (assertj-swagger, pact or Spring Contracts)
@@ -33,4 +39,3 @@
 ## NFRs
 1. Health-check endpoint
 1. Dockerize app
-
