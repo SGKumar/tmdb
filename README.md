@@ -20,7 +20,7 @@ The Movie DB
 
 ## Low
 - [x] Contract testing (assertj-swagger, pact or Spring Contracts)
-- [] API Documentation (Swagger ?)
-- [] API Version Management (GSON or otherwise ?)
-- [] Dockerize app
+- [ ] API Documentation (Swagger ?)
+- [ ] API Version Management (GSON or otherwise ?)
+- [ ] Dockerize app
 
