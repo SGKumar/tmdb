@@ -2,8 +2,9 @@
 The Movie DB
 
 ## High
-1. Use a Java based tmdb sdk (do I need something like Netflix feign too)
+1. Use an existing tmdb Java sdk (or call interfaces using Netflix feign)
 1. Device/use-specific customized interfaces
+   1. Coarse-grained vs fine-grained APIs 
 1. Single place for all entities, enums etc.,
 1. Standardized request (params, input) validation
 1. API key in env var
