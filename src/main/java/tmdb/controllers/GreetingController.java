@@ -30,14 +30,15 @@ public class GreetingController {
         tmdbApi = new TmdbApi(tmdbKey);
     }
 
-    @RequestMapping("/greeting")
+    @RequestMapping("/api/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
 
         //TmdbMovies movies = new TmdbApi("<apikey>").getMovies();
         //MovieDb movie = movies.getMovie(5353, "en");
         MovieDb movie = tmdbApi.getMovies().getMovie(5353, "en");
 
+        // TODO movie could be null, check that later
         return new Greeting(counter.incrementAndGet(),
-                            String.format(template, movie.getTitle()));
+                            String.format(template, name + " " + movie.getTitle()));
     }
 }
